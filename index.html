@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DStash — Verifiable Proof of Storage on Canton</title>
+  <meta name="description" content="DStash is a simple, secure protocol for storing data with confidence on the Canton Network." />
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10z" stroke="currentColor"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor"/>
+          </svg>
+        </span>
+        DStash
+      </a>
+      <nav class="hide-mobile" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="#contact">Request a demo
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      <div>
+        <span class="pill">Featured App Candidate on Canton</span>
+        <h1>Verifiable <span style="color:var(--primary)">Proof of Storage</span> on Canton</h1>
+        <p class="lead">DStash makes it easy to request storage, put funds on deposit, upload your data, and rely on independent providers to keep it safe. All actions and proofs are logged on-ledger for full transparency.</p>
+        <div class="row mt-6">
+          <a class="btn btn-primary" href="#contact">Request a demo</a>
+          <a class="btn btn-outline" href="#how">How it works</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>100%</b><span class="muted">On-ledger audit trail</span></div>
+          <div class="stat"><b>Deposit</b><span class="muted">Pay as you store</span></div>
+          <div class="stat"><b>Rewards</b><span class="muted">Providers get paid</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <h3 style="margin:0">Transparent Storage Lifecycle</h3>
+          <p class="muted">From request to payout, every step is tracked and enforced by smart contracts.</p>
+          <div class="grid" style="grid-template-columns: repeat(2, 1fr); gap:12px; margin-top:14px; font-size:13px;">
+            <div class="diagram step"><div class="label">Request</div><div class="muted">Ask providers to store your data</div></div>
+            <div class="diagram step"><div class="label">Deposit</div><div class="muted">Lock funds on-chain</div></div>
+            <div class="diagram step"><div class="label">Proofs</div><div class="muted">Providers answer challenges</div></div>
+            <div class="diagram step"><div class="label">Rewards / Slash</div><div class="muted">Providers earn for success, lose for failure</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section bg-soft">
+    <div class="container">
+      <div class="row" style="justify-content:space-between; align-items:center;">
+        <h2>Designed for dependable storage</h2>
+        <span class="pill">Production‑focused</span>
+      </div>
+      <div class="grid grid-3 features">
+        <article class="feature">
+          <h3>On‑ledger Auditability</h3>
+          <p>Requests, deposits, proofs, and payouts are immutably recorded on the Canton ledger.</p>
+        </article>
+        <article class="feature">
+          <h3>Simple User Flow</h3>
+          <p>Deposit funds, upload data, and let storage providers compete to deliver reliable service.</p>
+        </article>
+        <article class="feature">
+          <h3>Challenge & Proofs</h3>
+          <p>Providers regularly receive storage challenges and must respond with valid proofs to stay eligible for rewards.</p>
+        </article>
+        <article class="feature">
+          <h3>Automatic Payments</h3>
+          <p>Successful providers are paid directly from deposits; failed providers are slashed.</p>
+        </article>
+        <article class="feature">
+          <h3>Canton‑Native</h3>
+          <p>Built with Daml to leverage Canton’s privacy, scalability, and interoperability model.</p>
+        </article>
+        <article class="feature">
+          <h3>Provider Reputation</h3>
+          <p>Earn a reputation score through consistent delivery and responsiveness.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="container">
+      <h2>How DStash works</h2>
+      <div class="grid" style="gap:28px;">
+        <article class="card">
+          <h3 class="mb-1">For Storage Requesters</h3>
+          <p class="subtle">Create a storage contract, fund it, upload your data, and monitor ongoing proofs and payouts. Everything is enforceable on‑ledger and visible end‑to‑end.</p>
+          <ol class="subtle" style="padding-left: 18px; margin-top: 8px;">
+            <li><strong>Request storage:</strong> Choose providers, capacity, duration, and terms.</li>
+            <li><strong>Pay deposit:</strong> Lock funds on‑chain to back payouts and penalties.</li>
+            <li><strong>Upload data:</strong> Send your data to the selected providers.</li>
+            <li><strong>Track results:</strong> View challenges, proofs, and payouts in your audit trail.</li>
+          </ol>
+        </article>
+
+        <article class="card">
+          <h3 class="mb-1">For Storage Providers</h3>
+          <p class="subtle">Accept storage contracts, keep data available, and respond to periodic challenges. Get paid for valid proofs; risk slashing if you fail.</p>
+          <ol class="subtle" style="padding-left: 18px; margin-top: 8px;">
+            <li><strong>Accept contract:</strong> Review terms and commit capacity.</li>
+            <li><strong>Store data:</strong> Maintain availability and durability.</li>
+            <li><strong>Respond to challenges:</strong> Submit proofs before the deadline.</li>
+            <li><strong>Earn rewards:</strong> Receive payouts; missed or invalid proofs incur penalties.</li>
+          </ol>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section cta">
+    <div class="container grid grid-2">
+      <div>
+        <h2>Get started with DStash</h2>
+        <p class="subtle">Book a demo to see how DStash can help you secure data on the Canton network with straightforward incentives and accountability.</p>
+      </div>
+      <form class="grid" style="gap:12px; grid-template-columns: 2fr 1fr;" action="mailto:mightybyte+openai@mightybyte.net" method="post" enctype="text/plain">
+        <input class="input" type="email" name="email" placeholder="Work email" required />
+        <button class="btn btn-primary" type="submit">Request a demo</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container row" style="justify-content:space-between;">
+      <div class="row" style="gap:10px; align-items:center; color:var(--text);">
+        <span class="brand-mark" aria-hidden="true" style="background:color-mix(in oklab, var(--primary) 18%, transparent);"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10z" stroke="currentColor"/></svg></span>
+        <strong>DStash</strong>
+      </div>
+      <div>© <span id="y">2025</span> DStash. All rights reserved.</div>
+    </div>
+  </footer>
+</body>
+</html>
+
